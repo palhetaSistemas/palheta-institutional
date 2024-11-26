@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 export function Results() {
   return (
-    <div className="mx-auto flex h-full w-11/12 flex-col gap-8 pb-16 pt-8 lg:h-screen">
+    <div className="mx-auto flex h-full w-11/12 flex-col gap-8 pb-16 pt-8 lg:h-[120vh] xl:h-screen">
       <div className="flex flex-col items-center justify-center gap-4 text-primary">
         <Image
           src="/fullLogo.png"
