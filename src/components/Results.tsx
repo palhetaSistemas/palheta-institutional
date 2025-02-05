@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 export function Results() {
   return (
-    <div className="mx-auto flex h-full w-11/12 flex-col gap-8 pb-16 pt-8 lg:h-[120vh] xl:h-screen">
+    <div className="mx-auto flex h-full w-11/12 flex-col gap-8 pb-16 pt-8 lg:h-[120vh] 2xl:h-screen">
       <div className="flex flex-col items-center justify-center gap-4 text-primary">
         <Image
           src="/fullLogo.png"
@@ -33,7 +33,15 @@ export function Results() {
         </div>
         <div className="grid w-full grid-cols-2 grid-rows-2 gap-2 lg:w-1/2 lg:gap-8">
           <div className="col-span-1 row-span-1 flex flex-col justify-between rounded-xl border p-2 lg:p-8">
-            <div className="h-10 w-10 bg-red-500" />
+            <div className="flex h-16 w-16 items-center justify-center rounded-md bg-[#F9F9FF]">
+              <Image
+                src="/placeholder-1.png"
+                alt=""
+                width={200}
+                height={200}
+                className="h-max w-10 object-contain"
+              />
+            </div>
             <div className="flex flex-col">
               <span className="text-sm font-semibold lg:text-lg xl:text-2xl">
                 Projetos entregues
@@ -45,7 +53,15 @@ export function Results() {
             </div>
           </div>
           <div className="col-span-1 row-span-1 flex flex-col justify-between rounded-xl border p-2 lg:p-8">
-            <div className="h-10 w-10 bg-red-500" />
+            <div className="flex h-16 w-16 items-center justify-center rounded-md bg-[#F9F9FF]">
+              <Image
+                src="/placeholder-1.png"
+                alt=""
+                width={200}
+                height={200}
+                className="h-max w-10 object-contain"
+              />
+            </div>
             <div className="flex flex-col">
               <span className="text-sm font-semibold lg:text-lg xl:text-2xl">
                 História
@@ -57,7 +73,15 @@ export function Results() {
             </div>
           </div>
           <div className="col-span-1 row-span-1 flex flex-col justify-between rounded-xl border p-2 lg:p-8">
-            <div className="h-10 w-10 bg-red-500" />
+            <div className="flex h-16 w-16 items-center justify-center rounded-md bg-[#F9F9FF]">
+              <Image
+                src="/placeholder-1.png"
+                alt=""
+                width={200}
+                height={200}
+                className="h-max w-10 object-contain"
+              />
+            </div>
             <div className="flex flex-col">
               <span className="text-sm font-semibold lg:text-lg xl:text-2xl">
                 Crescimento
@@ -69,7 +93,15 @@ export function Results() {
             </div>
           </div>
           <div className="col-span-1 row-span-1 flex flex-col justify-between rounded-xl border p-2 lg:p-8">
-            <div className="h-10 w-10 bg-red-500" />
+            <div className="flex h-16 w-16 items-center justify-center rounded-md bg-[#F9F9FF]">
+              <Image
+                src="/placeholder-1.png"
+                alt=""
+                width={200}
+                height={200}
+                className="h-max w-10 object-contain"
+              />
+            </div>
             <div className="flex flex-col">
               <span className="text-sm font-semibold lg:text-lg xl:text-2xl">
                 Internacionalização

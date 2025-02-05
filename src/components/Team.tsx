@@ -52,10 +52,17 @@ export function Team() {
           {slides.map((item, index) => (
             <SwiperSlide
               key={index}
-              className="relative h-full w-60 rounded-xl bg-white/30 px-8"
+              className="relative flex h-full w-60 items-center justify-center rounded-xl bg-white/30 px-8"
             >
               <Image
-                src="/icon.png"
+                src="/placeholder-1.png"
+                alt=""
+                width={200}
+                height={200}
+                className="absolute left-1/2 top-1/2 h-max w-20 -translate-x-1/2 -translate-y-1/2 object-contain"
+              />
+              <Image
+                src="/iconWhite.png"
                 alt=""
                 width={200}
                 height={500}
