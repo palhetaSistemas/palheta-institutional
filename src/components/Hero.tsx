@@ -1,8 +1,8 @@
 "use client";
 import { ArrowRight } from "lucide-react";
 import { useRef } from "react";
-import useOnScreen from "../utils/IsOnScreen";
 import { twMerge } from "tailwind-merge";
+import useOnScreen from "../utils/IsOnScreen";
 
 export function Hero() {
   const ref1 = useRef<HTMLDivElement>(null);
@@ -39,11 +39,27 @@ export function Hero() {
               isVisible1.isIntersecting && "opacity-100",
             )}
           >
-            <button className="flex items-center gap-2 rounded-xl border bg-white p-4 font-semibold text-primary transition duration-300 hover:-translate-y-0.5 hover:scale-[1.005] hover:border-white hover:bg-transparent hover:text-white">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://orcamento.palhetaarquitetura.com.br/",
+                  "_blank",
+                )
+              }
+              className="flex items-center gap-2 rounded-xl border bg-white p-4 font-semibold text-primary transition duration-300 hover:-translate-y-0.5 hover:scale-[1.005] hover:border-white hover:bg-transparent hover:text-white"
+            >
               Solicitar um Orçamento
               <ArrowRight />
             </button>
-            <button className="rounded-xl border bg-transparent p-4 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:scale-[1.005] hover:border-primary hover:bg-white hover:text-primary">
+            <button
+              className="rounded-xl border bg-transparent p-4 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:scale-[1.005] hover:border-primary hover:bg-white hover:text-primary"
+              onClick={() => {
+                const el = document.getElementById("projects");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               Ver Nossos Projetos
             </button>
           </div>

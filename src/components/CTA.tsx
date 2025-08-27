@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef } from "react";
-import useOnScreen from "../utils/IsOnScreen";
 import { twMerge } from "tailwind-merge";
+import useOnScreen from "../utils/IsOnScreen";
 
 export function CTA() {
   const ref1 = useRef<HTMLDivElement>(null);
@@ -33,8 +33,16 @@ export function CTA() {
               Dê liberdade à sua criatividade junto à uma Inteligência
               Artificial que irá ajudar você a ter ideias e inspirações.
             </span>
-            <button className="w-max rounded-xl border border-white bg-white px-8 py-4 font-semibold text-primary transition duration-300 hover:-translate-y-0.5 hover:scale-[1.005] hover:bg-primary hover:text-white">
-              Utilizar Agora
+            <button
+              onClick={() =>
+                window.open(
+                  "https://orcamento.palhetaarquitetura.com.br/",
+                  "_blank",
+                )
+              }
+              className="w-max rounded-xl border border-white bg-white px-8 py-4 font-semibold text-primary transition duration-300 hover:-translate-y-0.5 hover:scale-[1.005] hover:bg-primary hover:text-white"
+            >
+              Fale com nosso time
             </button>
           </div>
         </div>
@@ -60,7 +68,12 @@ export function CTA() {
               Para você compreender o passo a passo para contratar a Palhete
               Arquitetura basta clicar no botão abaixo.
             </span>
-            <button className="w-max rounded-xl border border-primary bg-primary px-8 py-4 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:scale-[1.005] hover:bg-white hover:text-primary">
+            <button
+              onClick={() =>
+                window.open("https://app.palhetaarquitetura.com.br/", "_blank")
+              }
+              className="w-max rounded-xl border border-primary bg-primary px-8 py-4 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:scale-[1.005] hover:bg-white hover:text-primary"
+            >
               Acessar Meu Projeto
             </button>
           </div>

@@ -1,14 +1,13 @@
+import { CTA } from "../components/CTA";
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
+import History from "../components/History";
 import { Partners } from "../components/Partners";
-import { CTA } from "../components/CTA";
-import { Results } from "../components/Results";
-import { Team } from "../components/Team";
 import { Projects } from "../components/Projects";
+import { Results } from "../components/Results";
+import TechnologySection from "../components/Technology";
 import { Testimonials } from "../components/Testimonials";
-import { Footer } from "../components/Footer";
-import { twMerge } from "tailwind-merge";
-import { useState } from "react";
 
 export default function Home() {
   return (
@@ -17,9 +16,10 @@ export default function Home() {
       <Hero />
       <Partners />
       <CTA />
-      <Results />
-      <Team />
       <Projects />
+      <History />
+      <TechnologySection />
+      <Results />
       <Testimonials />
       <Footer />
     </div>
