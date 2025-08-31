@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 export function Footer() {
@@ -10,9 +11,30 @@ export function Footer() {
         height={400}
         className="h-20 w-max object-contain"
       />
-      <span>
-        Copyright © 2024 Palheta Arquitetura | Todos os Direitos Reservados
-      </span>
+      <div className="flex flex-col">
+        <span>
+          Copyright © 2024 Palheta Arquitetura | Todos os Direitos Reservados
+        </span>
+        <div className="flex items-center justify-end gap-1">
+          <span
+            onClick={() =>
+              window.open("https://palhetaarquitetura.com.br/terms", "_blank")
+            }
+            className="cursor-pointer text-xs"
+          >
+            Termos de uso
+          </span>
+          |
+          <span
+            onClick={() =>
+              window.open("https://palhetaarquitetura.com.br/privacy", "_blank")
+            }
+            className="cursor-pointer text-xs"
+          >
+            Política de Privacidade
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
